@@ -23,5 +23,5 @@ function yair_update_property_after_payment( $order_id ){
 	}		
 	
 	global $woocommerce;
-    $woocommerce->cart->empty_cart();
+	$woocommerce->cart->empty_cart();
 }
