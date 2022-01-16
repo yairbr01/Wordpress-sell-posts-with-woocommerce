@@ -8,10 +8,11 @@ Plugin required:
 
 how to use?
 1. Create a post publish form (you can do this using the "forms" module in the JetEngine plugin). The form will publish the posts in "private" mode.
-2. In actions after submitting the form, add an "Call a Hook" action and enter the value "publish_payment".
-3. Add another action after sending and it is a reference to the payment page.
-4. Add multiple products, each product indicates a package type, if you have only one then add a single product.
-5. Add a custom field in posts, the field type is "select" named "ad_type". The values of the selections in this field will be the ID of the products you have created.
+2. Add a field in the form called "ad_type" of the "radio" type where the user can select the appropriate product, the values should be the ID of the products.
+3. In actions after submitting the form, add an "Call a Hook" action and enter the value "publish_payment".
+4. Add another action after sending and it is a reference to the payment page.
+5. Add multiple products, each product indicates a package type, if you have only one then add a single product.
+6. Add a custom field in posts, the field type is "select" named "ad_type". The values of the selections in this field will be the ID of the products you have created.
 
 
 Explanation of the actions:
