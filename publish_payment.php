@@ -6,8 +6,8 @@ add_action( 'jet-engine-booking/publish_payment', function( $data ) {
 	$product_id = $data[ 'ad_type' ];
 	
 	global $woocommerce;
-    $woocommerce->cart->empty_cart();
-    $woocommerce->cart->add_to_cart($product_id);	
+	$woocommerce->cart->empty_cart();
+	$woocommerce->cart->add_to_cart($product_id);	
 
 	$cookie_name = "property_id";
 	$cookie_value = $post_id;
