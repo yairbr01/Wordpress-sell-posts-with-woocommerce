@@ -1,6 +1,6 @@
 function checkout_remove_fields( $woo_checkout_fields_array ) {
 
-  // unset( $woo_checkout_fields_array['billing']['billing_first_name'] );
+	// unset( $woo_checkout_fields_array['billing']['billing_first_name'] );
 	// unset( $woo_checkout_fields_array['billing']['billing_phone'] );
 	// unset( $woo_checkout_fields_array['billing']['billing_email'] );
 
@@ -41,6 +41,6 @@ add_action( 'woocommerce_after_checkout_billing_form', 'checkout_property_id_fil
 add_action( 'woocommerce_checkout_update_order_meta', 'checkout_property_id_save' );
 
 function checkout_field_display_admin_order_meta($order){
-    echo '<p><strong>'.__('Post ID for upgrade').':</strong> <br/>' . get_post_meta( $order->get_id(), 'property_id', true ) . '</p>';
+	echo '<p><strong>'.__('Post ID for upgrade').':</strong> <br/>' . get_post_meta( $order->get_id(), 'property_id', true ) . '</p>';
 }
 add_action( 'woocommerce_admin_order_data_after_billing_address', 'checkout_field_display_admin_order_meta', 10, 1 );
